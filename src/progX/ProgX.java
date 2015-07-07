@@ -27,7 +27,7 @@ public class ProgX {
         System.out.println(dish1);
     }
 }
-
+//Helper class
 class ConsoleHandler {
     private static Scanner scanner = new Scanner(System.in); //Helpful attribute for classes like this!
 
