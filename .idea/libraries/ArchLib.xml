@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ArchLib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ArchLibraries/out/artifacts/ArchLib/ArchLib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
