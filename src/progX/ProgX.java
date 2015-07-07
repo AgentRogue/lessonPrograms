@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by TJ Challstrom on 29-Jun-15.
  * Main Class
  */
-//Main method
+//main() method
 public class ProgX {
     public static void main(String[] args) {
         Dish dish1 = new Dish("Ice Cream", "Creamy", 0, 'B');
