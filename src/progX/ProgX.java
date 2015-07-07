@@ -1,4 +1,6 @@
 package progX;
+//OH MY GOD
+
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
