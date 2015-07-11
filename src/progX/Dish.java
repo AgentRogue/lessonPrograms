@@ -2,15 +2,58 @@ package progX;
 
 /**
  * Created by TJ Challstrom on 01-Jul-15.
- * Dish Object, Yum!
+ * Dish Object, has food on it.
  */
 public class Dish {
-    public static String plating = "Bowl";
+    private String plating; //What type of dish is it? e.g. bowl
     private String name;
-    private String taste;
-    private int spicy;
-    private char rating;
-    private Food food;
+    private char rating; //What's its letter grade? A-F descending
+    private Food food; //What's on the plate?
+    private double price;
+
+    public Dish() {
+    }
+
+    public Dish(String plating, String name, char rating, double price) {
+
+        this.plating = plating;
+        this.name = name;
+        this.rating = rating;
+        this.price = price;
+    }
+
+    public Dish(String plating, String name, char rating, double price, Food food) {
+
+        this.plating = plating;
+        this.name = name;
+        this.rating = rating;
+        this.price = price;
+        this.food = food;
+    }
+
+    public String getPlating() {
+        return plating;
+    }
+
+    public void setPlating(String plating) {
+        this.plating = plating;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getRating() {
+        return rating;
+    }
+
+    public void setRating(char rating) {
+        this.rating = rating;
+    }
 
     public Food getFood() {
         return food;
@@ -20,54 +63,29 @@ public class Dish {
         this.food = food;
     }
 
-    public Dish(String name, String taste, int spicy, char rating) {
-        this.name = name;
-        this.taste = taste;
-        this.spicy = spicy;
-        this.rating = rating;
+    public double getPrice() {
+        return price;
     }
 
-    public String getTaste() {
-        return taste;
-    }
-
-    public int getSpicy() {
-        return spicy;
-    }
-
-    public char getRating() {
-        return rating;
-    }
-
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setTaste(String taste) {
-        this.taste = taste;
-    }
-
-    public void setSpicy(int spicy) {
-        this.spicy = spicy;
-    }
-
-    public void setRating(char rating) {
-        this.rating = rating;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override
     public String toString() {
         return "Dish{" +
-                "name='" + name + '\'' +
-                ", taste='" + taste + '\'' +
-                ", spicy=" + spicy +
+                "plating='" + plating + '\'' +
+                ", name='" + name + '\'' +
                 ", rating=" + rating +
                 ", food=" + food +
+                ", price=" + price +
                 '}';
+    }
+
+    public void washDish() {
+        this.name = "";
+        this.rating = 'N';
+        this.price = 0;
+        this.food = null;
     }
 }

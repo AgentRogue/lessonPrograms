@@ -6,13 +6,15 @@ package progX;
  */
 public class Food {
     private String size;
-    private double price;
-    private int quality;
+    private int quality; //How good are the ingredients 1-5 ascending
+    private String taste; //What is the taste category? I.e.Cajun, sweets
+    private int spicy; //How spicy is is 1-5 ascending
 
-    public Food(){}
-
-    public Food(double price) {
-        this.price = price;
+    public Food(String size, int quality, String taste, int spicy) {
+        this.size = size;
+        this.quality = quality;
+        this.taste = taste;
+        this.spicy = spicy;
     }
 
     public String getSize() {
@@ -23,14 +25,6 @@ public class Food {
         this.size = size;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public int getQuality() {
         return quality;
     }
@@ -39,12 +33,19 @@ public class Food {
         this.quality = quality;
     }
 
-    @Override
-    public String toString() {
-        return "Food{" +
-                "size='" + size + '\'' +
-                ", price=" + price +
-                ", quality=" + quality +
-                '}';
+    public String getTaste() {
+        return taste;
+    }
+
+    public void setTaste(String taste) {
+        this.taste = taste;
+    }
+
+    public int getSpicy() {
+        return spicy;
+    }
+
+    public void setSpicy(int spicy) {
+        this.spicy = spicy;
     }
 }
