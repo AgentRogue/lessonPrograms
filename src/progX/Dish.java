@@ -71,6 +71,10 @@ public class Dish {
         this.price = price;
     }
 
+    public int getSpicy() {
+        return this.food.getSpicy();
+    }
+
     @Override
     public String toString() {
         return "Dish{" +

@@ -10,21 +10,26 @@ import java.util.Scanner;
 //main() method
 public class ProgX {
     public static void main(String[] args) {
-        Dish dish1 = new Dish("Ice Cream", "Creamy", 0, 'B');
-        Dish dish2 = new Dish("Sushi", "Fishy", 2, 'A');
+        Dish dish1 = new Dish("Bowl", "Creamy Cream", 'B', 0.00);
         //Rating goes down
         dish1.setRating('C');
+        //Let's see if it's spicy
         if (dish1.getSpicy() > 4) {
             System.out.println("SPICY!");
         } else {
             System.out.println("Not Spicy");
         }
+        //Let's see how we're doing
         System.out.println(dish1);
-        Food food = new Food();
+        //Let's put some food on the dish
+        Food food = new Food("Medium", 4, "Sweet", 1);
         dish1.setFood(food);
-        food.setPrice(4.24);
+        //Let's make the dish cost 4.24$
+        dish1.setPrice(4.24);
+        //Let's make the portion smaller
         food.setQuality(3);
         food.setSize("Small");
+        //Let's see what we got
         System.out.println(dish1);
     }
 }
